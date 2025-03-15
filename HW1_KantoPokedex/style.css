@@ -1,0 +1,79 @@
+/* 1. Resets/Globals */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    /* Kanto gradient background */
+    background: #efefbb;
+    background: linear-gradient(to right, #d4d3dd, #efefbb);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+  
+  h1 {
+    letter-spacing: 3px;
+  }
+  
+  /* 2. Container for all pokemon cards */
+  .poke-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-between;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  /* 3. Individual pokemon card */
+  .pokemon {
+    background-color: #eeeeee;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 180px; /* optional fixed width */
+  }
+  
+  /* 4. The image container inside each card */
+  .pokemon .img-container {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .pokemon .img-container img {
+    max-width: 90%;
+    margin-top: 10px;
+  }
+  
+  /* 5. The text info area inside each card */
+  .pokemon .info {
+    margin-top: 20px;
+  }
+  
+  .pokemon .info .number {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 0.8em;
+  }
+  
+  .pokemon .info .name {
+    margin: 15px 0 7px;
+    letter-spacing: 1px;
+  }
+  
+  .pokemon .type {
+    font-size: 0.9em;
+    text-transform: capitalize;
+  }
+  
